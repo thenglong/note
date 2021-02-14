@@ -2,6 +2,7 @@ import { useState } from 'react';
 import NoteForm from './NoteForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
+import { motion } from 'framer-motion';
 
 const Note = ({ notes, completeNote, removeNote, updateNote }) => {
   const [edit, setEdit] = useState({
@@ -22,7 +23,9 @@ const Note = ({ notes, completeNote, removeNote, updateNote }) => {
   console.log(notes);
 
   return notes.map((note, index) => (
-    <div
+    <motion.div
+      initial={{ x: '-10%' }}
+      animate={{ x: 0 }}
       className={note.isComplete ? 'note-row complete' : 'note-row'}
       key={index}
     >
@@ -39,7 +42,7 @@ const Note = ({ notes, completeNote, removeNote, updateNote }) => {
           className="edit-icon"
         />
       </div>
-    </div>
+    </motion.div>
   ));
 };
 
