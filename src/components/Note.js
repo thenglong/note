@@ -42,7 +42,7 @@ const Note = ({ notes, completeNote, removeNote, updateNote }) => {
       <div className="icons">
         <RiCloseCircleLine
           onClick={() => removeNote(note.id)}
-          className="delete-icon"
+          className="delete-icon flex"
         />
         <TiEdit
           onClick={() => setEdit({ id: note.id, value: note.text })}

@@ -1,9 +1,8 @@
-import './App.css';
 import NoteList from './components/NoteList';
 
 function App() {
   return (
-    <div className="note-app">
+    <div className="flex flex-col justify-start text-center">
       <NoteList />
     </div>
   );

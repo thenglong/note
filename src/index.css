@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,17 +21,18 @@ body {
   min-height: 100vh;
 }
 .note-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
   max-width: 520px;
   min-height: 600px;
   background: #161a2b;
-  text-align: center;
+  /* text-align: center; */
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
 }
+/* 
 
 @media screen and (max-width: 460px) {
   .note-app {
@@ -164,4 +168,4 @@ h1 {
 
 .edit-icon {
   color: #fff;
-}
+} */
